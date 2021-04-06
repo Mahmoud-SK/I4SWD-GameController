@@ -4,7 +4,17 @@ using System.Text;
 
 namespace I4SWD_GameController
 {
-	class JumpCommand
-	{
-	}
+	class JumpCommand :ICommand
+    {
+        private GameCharacter gameCharacter;
+
+        public JumpCommand(GameCharacter gameCharacter)
+        {
+           this.gameCharacter = gameCharacter;
+        }
+        public void Execute()
+        {
+            //gameCharacter.Jump();
+        }
+    }
 }
