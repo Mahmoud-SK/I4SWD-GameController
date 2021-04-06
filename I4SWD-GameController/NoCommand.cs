@@ -4,8 +4,10 @@ using System.Text;
 
 namespace I4SWD_GameController
 {
-	public interface ICommand
-	{
-		void Execute();
-	}
+    public class NoCommand : ICommand
+    {
+        public void Execute()
+        {
+        }
+    }
 }
