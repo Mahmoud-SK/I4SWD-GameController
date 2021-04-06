@@ -9,7 +9,7 @@ namespace I4SWD_GameController
         private ICommand[] commands;
         private int numberOfButtons = 4;
 
-        Controller()
+        public Controller()
         {
             commands = new ICommand[numberOfButtons];
 
@@ -29,7 +29,11 @@ namespace I4SWD_GameController
 
         public void buttonPushed(int index)
         {
-            commands[index].Execute();
+            if (index >= 0 && index < numberOfButtons)
+            {
+                commands[index].Execute();
+            }
+
         }
     }
 }

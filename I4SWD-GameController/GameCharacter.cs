@@ -4,7 +4,17 @@ using System.Text;
 
 namespace I4SWD_GameController
 {
-	class GameCharacter
+	public class GameCharacter
 	{
+		public void Jump()
+		{
+			Console.WriteLine("Jumping");
+		}
+
+		public void Attack()
+		{
+			Console.WriteLine("Attacking");
+		}
+
 	}
 }

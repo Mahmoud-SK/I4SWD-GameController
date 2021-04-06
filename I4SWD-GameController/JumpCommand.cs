@@ -4,7 +4,7 @@ using System.Text;
 
 namespace I4SWD_GameController
 {
-	class JumpCommand :ICommand
+	public class JumpCommand :ICommand
     {
         private GameCharacter gameCharacter;
 
@@ -14,7 +14,7 @@ namespace I4SWD_GameController
         }
         public void Execute()
         {
-            //gameCharacter.Jump();
+            gameCharacter.Jump();
         }
     }
 }

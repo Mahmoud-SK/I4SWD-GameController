@@ -4,7 +4,7 @@ using System.Text;
 
 namespace I4SWD_GameController
 {
-    class AttackCommand : ICommand
+    public class AttackCommand : ICommand
     {
         GameCharacter Character;
 
