@@ -6,16 +6,16 @@ namespace I4SWD_GameController
 {
     public class AttackCommand : ICommand
     {
-        GameCharacter Character;
+        private GameCharacter gameCharacter;
 
         public AttackCommand(GameCharacter Character)
         {
-            this.Character = Character;
+            this.gameCharacter = Character;
         }
 
         public void Execute()
         {
-            Character.Attack();
+            gameCharacter.Attack();
         }
     }
 }
